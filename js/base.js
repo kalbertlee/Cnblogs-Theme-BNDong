@@ -295,7 +295,7 @@ function Base() {
         var settings = {
             "async": true,
             "crossDomain": true,
-            "url": "https://v1.hitokoto.cn/?c=d",
+            "url": "https://v1.hitokoto.cn/?c=a",
             "method": "GET",
             "headers": {
                 "content-type": "application/x-www-form-urlencoded",
@@ -735,9 +735,9 @@ function Base() {
 
         function setRunTime() {
             var str = window.cnblogsConfig.blogStartDate;
-            str = str ? str : '2018-2-12';
+            str = str ? str : '2019-8-13';
             var runDate = tools.getRunDate(str);
-            $('#blogRunTimeSpan').text('This blog has running : '+runDate.daysold+' d '+runDate.hrsold+' h '+runDate.minsold+' m '+runDate.seconds+' s');
+            $('#blogRunTimeSpan').text('博客已启动：'+runDate.daysold+' d '+runDate.hrsold+' h '+runDate.minsold+' m '+runDate.seconds+' s');
         }
         function setBlogroll() {
             if (window.cnblogsConfig.bottomBlogroll.length > 0) {
