@@ -305,7 +305,7 @@ function Base() {
         $.ajax(settings).done(function (response) {
             if (response !== '') {
                 $('#hitokoto').text(response.hitokoto).css('display', '-webkit-box');
-                $('#hitokotoAuthor').text('- ' + response.from).show()
+                $('#hitokotoAuthor').text('-- 《' + response.from + '》').show()
             } else {
                 var listIndex = tools.randomNum(0, topTitleList.length - 1);
                 $('#hitokoto').text(topTitleList[listIndex]).css('display', '-webkit-box')
